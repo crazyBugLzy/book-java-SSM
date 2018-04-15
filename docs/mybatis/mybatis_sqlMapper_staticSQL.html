@@ -1,0 +1,529 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>静态SQL · Mybaits 简单教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="crazybuglzy">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mybatis_sqlMapper_sql.html" />
+    
+    
+    <link rel="prev" href="mybatis_sqlMapper_other.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.baidu.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Mybatis 框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="mybatis_MybatisXML.html">
+            
+                <a href="mybatis_MybatisXML.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    核心配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="mybatis_property.html">
+            
+                <a href="mybatis_property.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="mybatis_configuration.html">
+            
+                <a href="mybatis_configuration.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    全局配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="mybatis_typeHandlers.html">
+            
+                <a href="mybatis_typeHandlers.html">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    typeHandlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="mybatis_objectFactory.html">
+            
+                <a href="mybatis_objectFactory.html">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    objectFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="mybatis_plugins.html">
+            
+                <a href="mybatis_plugins.html">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    插件 plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="mybatis_environments.html">
+            
+                <a href="mybatis_environments.html">
+            
+                    
+                        <b>1.2.1.6.</b>
+                    
+                    配置环境 environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="mybatis_sqlMapper.html">
+            
+                <a href="mybatis_sqlMapper.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    SQL映射文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="mybatis_sqlMapper_select.html">
+            
+                <a href="mybatis_sqlMapper_select.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="mybatis_sqlMapper_other.html">
+            
+                <a href="mybatis_sqlMapper_other.html">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    INSERT,UPDATE和DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.3" data-path="mybatis_sqlMapper_staticSQL.html">
+            
+                <a href="mybatis_sqlMapper_staticSQL.html">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    静态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="mybatis_sqlMapper_sql.html">
+            
+                <a href="mybatis_sqlMapper_sql.html">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    动态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="mybatis_cache.html">
+            
+                <a href="mybatis_cache.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="mybatis_javaApi.html">
+            
+                <a href="mybatis_javaApi.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    JAVA API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="mybatis_sqlinJava.html">
+            
+                <a href="mybatis_sqlinJava.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    JAVA SQL语句的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="mybatis_test.html">
+            
+                <a href="mybatis_test.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    测试方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="mybatis_import.html">
+            
+                <a href="mybatis_import.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Import Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >静态SQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9759;&#x6001;sql">&#x9759;&#x6001;SQL</h1>
+<ol>
+<li>SQL &#x4EE3;&#x7801;&#x6BB5;</li>
+</ol>
+<pre><code>&lt;sql id=&quot;sometable&quot;&gt;
+  ${prefix}Table
+&lt;/sql&gt;
+
+&lt;sql id=&quot;someinclude&quot;&gt;
+  from
+    &lt;include refid=&quot;${include_target}&quot;/&gt;
+&lt;/sql&gt;
+
+&lt;select id=&quot;select&quot; resultType=&quot;map&quot;&gt;
+  select
+    field1, field2, field3
+  &lt;include refid=&quot;someinclude&quot;&gt;
+    &lt;property name=&quot;prefix&quot; value=&quot;Some&quot;/&gt;
+    &lt;property name=&quot;include_target&quot; value=&quot;sometable&quot;/&gt;
+  &lt;/include&gt;
+&lt;/select&gt;
+</code></pre><ol>
+<li>&#x7ED1;&#x5B9A;&#x53C2;&#x6570; </li>
+<li><code>#{age,javaType=int,jdbcType=NUMERIC,typeHandler=MyTypeHandler}</code></li>
+<li>RESULT MAP &#x6620;&#x5C04;</li>
+<li>&#x7ED3;&#x679C;&#x96C6;&#x652F;&#x6301;&#x7EE7;&#x627F;,extends=&quot;xxx&quot;</li>
+<li>&#x7ED3;&#x679C;&#x96C6;&#x4E5F;&#x8003;&#x8651;&#x81EA;&#x52A8;&#x6620;&#x5C04;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x81EA;&#x52A8;&#x9A7C;&#x5CF0;&#x8F6C;&#x5316;&#xFF0C;&#x6BD4;&#x8F83;&#x6E05;&#x6670;&#x70B9;</li>
+<li>&#x9AD8;&#x7EA7;&#x6620;&#x5C04;&#x548C;&#x5D4C;&#x5957;&#x6620;&#x5C04;&#x5728;&#x5206;&#x57DF;&#x67E5;&#x8BE2;&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x6BD4;&#x8F83;&#x5C11;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x90E8;&#x5206;&#x8868;&#x5206;&#x5E93;&#x5206;&#x8868;&#x540E;&#xFF0C;&#x65E0;&#x6CD5;&#x8FDE;&#x8868;&#x67E5;&#x8BE2;&#x3002;</li>
+<li>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;</li>
+<li>SELECT XXX : &#x6B64;&#x90E8;&#x5206;&#x6839;&#x636E;&#x9700;&#x8981;&#xFF0C;&#x9009;&#x62E9;&#x662F;&#x76F4;&#x63A5;&#x5199;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8FD8;&#x662F;&#x901A;&#x8FC7;SQL&#x5D4C;&#x5165;&#x3002;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#x90FD;&#x4F7F;&#x7528;&#x5230;&#xFF0C;&#x5EFA;&#x8BAE;&#x5199;&#x5728;SQL&#x91CC;&#x9762;</li>
+<li>FROM TABLE&#xFF1A;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x7528;&#x5230;&#xFF0C;&#x5EFA;&#x8BAE;&#x628A;&#x8FD9;&#x90E8;&#x5206;&#x653E;&#x5728;<sql></sql></li>
+<li>WHERE &#xFF1A;&#x52A8;&#x6001;&#x67E5;&#x8BE2;&#x5219;&#x53C2;&#x8003;&#x52A8;&#x6001;SQL</li>
+<li>RESULT : &#x5177;&#x4F53;&#x7C7B;&#x578B;&#x6216;&#x8005;Result set&#xFF0C;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x5982;&#x679C;&#x662F;&#x5B9E;&#x4F53;&#xFF0C;&#x5168;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x6216;&#x8005;&#x522B;&#x540D;<ul>
+<li>resultType&#xFF1A;&#x5982;&#x679C;&#x5217;&#x540D;&#x548C;&#x5C5E;&#x6027;&#x540D;&#x6CA1;&#x6709;&#x7CBE;&#x51C6;&#x5339;&#x914D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SELECT AS &#x522B;&#x540D; </li>
+</ul>
+</li>
+<li>&#x6839;&#x636E;&#x7ED3;&#x679C;&#x60C5;&#x51B5;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#xFF1A;==discriminator==</li>
+</ol>
+<pre><code>&lt;resultMap id=&quot;vehicleResult&quot; type=&quot;Vehicle&quot;&gt;
+  &lt;id property=&quot;id&quot; column=&quot;id&quot; /&gt;
+  &lt;result property=&quot;vin&quot; column=&quot;vin&quot;/&gt;
+  &lt;result property=&quot;year&quot; column=&quot;year&quot;/&gt;
+  &lt;result property=&quot;make&quot; column=&quot;make&quot;/&gt;
+  &lt;result property=&quot;model&quot; column=&quot;model&quot;/&gt;
+  &lt;result property=&quot;color&quot; column=&quot;color&quot;/&gt;
+  &lt;discriminator javaType=&quot;int&quot; column=&quot;vehicle_type&quot;&gt;
+    &lt;case value=&quot;1&quot; resultMap=&quot;carResult&quot;/&gt;
+    &lt;case value=&quot;2&quot; resultMap=&quot;truckResult&quot;/&gt;
+    &lt;case value=&quot;3&quot; resultMap=&quot;vanResult&quot;/&gt;
+    &lt;case value=&quot;4&quot; resultMap=&quot;suvResult&quot;/&gt;
+  &lt;/discriminator&gt;
+&lt;/resultMap&gt;
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mybatis_sqlMapper_other.html" class="navigation navigation-prev " aria-label="Previous page: INSERT,UPDATE和DELETE">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mybatis_sqlMapper_sql.html" class="navigation navigation-next " aria-label="Next page: 动态SQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"静态SQL","level":"1.2.2.3","depth":3,"next":{"title":"动态SQL","level":"1.2.2.4","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_sql.md","ref":"docs/mybatis/mybatis_sqlMapper_sql.md","articles":[]},"previous":{"title":"INSERT,UPDATE和DELETE","level":"1.2.2.2","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_other.md","ref":"docs/mybatis/mybatis_sqlMapper_other.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © crazybuglzy.com 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/crazyBugLzy"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"},"3-ba":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhangjikai/gitbook-use/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"crazybuglzy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mybaits 简单教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.baidu.com"}},"gitbook":"3.2.3","description":"快速学习Mybatis"},"file":{"path":"docs/mybatis/mybatis_sqlMapper_staticSQL.md","mtime":"2018-04-12T09:53:21.359Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-13T08:50:11.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

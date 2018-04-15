@@ -1,0 +1,521 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>测试方式 · Mybaits 简单教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="crazybuglzy">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mybatis_import.html" />
+    
+    
+    <link rel="prev" href="mybatis_sqlinJava.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.baidu.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Mybatis 框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="mybatis_MybatisXML.html">
+            
+                <a href="mybatis_MybatisXML.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    核心配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="mybatis_property.html">
+            
+                <a href="mybatis_property.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="mybatis_configuration.html">
+            
+                <a href="mybatis_configuration.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    全局配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="mybatis_typeHandlers.html">
+            
+                <a href="mybatis_typeHandlers.html">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    typeHandlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="mybatis_objectFactory.html">
+            
+                <a href="mybatis_objectFactory.html">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    objectFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="mybatis_plugins.html">
+            
+                <a href="mybatis_plugins.html">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    插件 plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="mybatis_environments.html">
+            
+                <a href="mybatis_environments.html">
+            
+                    
+                        <b>1.2.1.6.</b>
+                    
+                    配置环境 environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="mybatis_sqlMapper.html">
+            
+                <a href="mybatis_sqlMapper.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    SQL映射文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="mybatis_sqlMapper_select.html">
+            
+                <a href="mybatis_sqlMapper_select.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="mybatis_sqlMapper_other.html">
+            
+                <a href="mybatis_sqlMapper_other.html">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    INSERT,UPDATE和DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="mybatis_sqlMapper_staticSQL.html">
+            
+                <a href="mybatis_sqlMapper_staticSQL.html">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    静态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="mybatis_sqlMapper_sql.html">
+            
+                <a href="mybatis_sqlMapper_sql.html">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    动态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="mybatis_cache.html">
+            
+                <a href="mybatis_cache.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="mybatis_javaApi.html">
+            
+                <a href="mybatis_javaApi.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    JAVA API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="mybatis_sqlinJava.html">
+            
+                <a href="mybatis_sqlinJava.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    JAVA SQL语句的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="mybatis_test.html">
+            
+                <a href="mybatis_test.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    测试方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="mybatis_import.html">
+            
+                <a href="mybatis_import.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Import Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >测试方式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6D4B;&#x8BD5;&#x65B9;&#x5F0F;">&#x6D4B;&#x8BD5;&#x65B9;&#x5F0F;</h1>
+<pre><code>public abstract class BaseTest {
+
+    private String configPath = &quot;mybatis.xml&quot;;
+    private InputStream inputStream;
+    private SqlSessionFactory sqlSessionFactory;
+    private SqlSession sqlSession;
+
+    //&#x52A0;&#x8F7D;&#x8D44;&#x6E90;
+    protected SqlSession loadResource() throws IOException {
+        inputStream = Resources.getResourceAsStream(configPath);
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        sqlSession = sqlSessionFactory.openSession();
+        return sqlSession;
+    }
+
+    //&#x5173;&#x95ED;&#x8D44;&#x6E90;
+    protected void destory() throws IOException {
+        if (inputStream == null) {
+            inputStream.close();
+        }
+        if (sqlSession == null) {
+            sqlSession.close();
+        }
+    }
+
+}
+
+public class UserDaoTest extends com.lzy.mybatis.BaseTest {
+
+    @Test
+    public void testListUser() {
+        try {
+            SqlSession sqlSession = loadResource();
+            UserDao userDao = sqlSession.getMapper(UserDao.class);
+            List&lt;UserDO&gt; users = userDao.listUser();
+            System.out.println(users.toString());
+            destory();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mybatis_sqlinJava.html" class="navigation navigation-prev " aria-label="Previous page: JAVA SQL语句的创建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mybatis_import.html" class="navigation navigation-next " aria-label="Next page: Import Package">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"测试方式","level":"1.2.6","depth":2,"next":{"title":"Import Package","level":"1.2.7","depth":2,"path":"docs/mybatis/mybatis_import.md","ref":"docs/mybatis/mybatis_import.md","articles":[]},"previous":{"title":"JAVA SQL语句的创建","level":"1.2.5","depth":2,"path":"docs/mybatis/mybatis_sqlinJava.md","ref":"docs/mybatis/mybatis_sqlinJava.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © crazybuglzy.com 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/crazyBugLzy"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"},"3-ba":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhangjikai/gitbook-use/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"crazybuglzy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mybaits 简单教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.baidu.com"}},"gitbook":"3.2.3","description":"快速学习Mybatis"},"file":{"path":"docs/mybatis/mybatis_test.md","mtime":"2018-04-12T09:53:06.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-13T08:50:11.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

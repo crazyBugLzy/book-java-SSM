@@ -1,0 +1,520 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>配置环境 environments · Mybaits 简单教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="crazybuglzy">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mybatis_sqlMapper.html" />
+    
+    
+    <link rel="prev" href="mybatis_plugins.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.baidu.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Mybatis 框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="mybatis_MybatisXML.html">
+            
+                <a href="mybatis_MybatisXML.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    核心配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="mybatis_property.html">
+            
+                <a href="mybatis_property.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    Property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="mybatis_configuration.html">
+            
+                <a href="mybatis_configuration.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    全局配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="mybatis_typeHandlers.html">
+            
+                <a href="mybatis_typeHandlers.html">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    typeHandlers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="mybatis_objectFactory.html">
+            
+                <a href="mybatis_objectFactory.html">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    objectFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="mybatis_plugins.html">
+            
+                <a href="mybatis_plugins.html">
+            
+                    
+                        <b>1.2.1.5.</b>
+                    
+                    插件 plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.6" data-path="mybatis_environments.html">
+            
+                <a href="mybatis_environments.html">
+            
+                    
+                        <b>1.2.1.6.</b>
+                    
+                    配置环境 environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="mybatis_sqlMapper.html">
+            
+                <a href="mybatis_sqlMapper.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    SQL映射文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="mybatis_sqlMapper_select.html">
+            
+                <a href="mybatis_sqlMapper_select.html">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="mybatis_sqlMapper_other.html">
+            
+                <a href="mybatis_sqlMapper_other.html">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    INSERT,UPDATE和DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="mybatis_sqlMapper_staticSQL.html">
+            
+                <a href="mybatis_sqlMapper_staticSQL.html">
+            
+                    
+                        <b>1.2.2.3.</b>
+                    
+                    静态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="mybatis_sqlMapper_sql.html">
+            
+                <a href="mybatis_sqlMapper_sql.html">
+            
+                    
+                        <b>1.2.2.4.</b>
+                    
+                    动态SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="mybatis_cache.html">
+            
+                <a href="mybatis_cache.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="mybatis_javaApi.html">
+            
+                <a href="mybatis_javaApi.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    JAVA API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="mybatis_sqlinJava.html">
+            
+                <a href="mybatis_sqlinJava.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    JAVA SQL语句的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="mybatis_test.html">
+            
+                <a href="mybatis_test.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    测试方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="mybatis_import.html">
+            
+                <a href="mybatis_import.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    Import Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >配置环境 environments</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x914D;&#x7F6E;&#x73AF;&#x5883;-environments">&#x914D;&#x7F6E;&#x73AF;&#x5883; environments</h1>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; SqlSessionFactory &#x5B9E;&#x4F8B;</li>
+<li>&#x73AF;&#x5883;XML&#x914D;&#x7F6E;&#x770B;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;</li>
+<li>&#x6570;&#x636E;&#x6E90;&#xFF08;dataSource&#xFF09;<ul>
+<li>UNPOOLED</li>
+<li>POOLED</li>
+<li>JNDI</li>
+</ul>
+</li>
+</ol>
+<p><strong>UNPOOLED</strong>&#x2013; &#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x6E90;&#x7684;&#x5B9E;&#x73B0;&#x53EA;&#x662F;&#x6BCF;&#x6B21;&#x88AB;&#x8BF7;&#x6C42;&#x65F6;&#x6253;&#x5F00;&#x548C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;&#x867D;&#x7136;&#x6709;&#x70B9;&#x6162;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x5728;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x53EF;&#x7528;&#x6027;&#x65B9;&#x9762;&#x6CA1;&#x6709;&#x592A;&#x9AD8;&#x8981;&#x6C42;&#x7684;&#x7B80;&#x5355;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002; &#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5728;&#x6027;&#x80FD;&#x65B9;&#x9762;&#x7684;&#x8868;&#x73B0;&#x4E5F;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x6570;&#x636E;&#x5E93;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x6C60;&#x5E76;&#x4E0D;&#x91CD;&#x8981;&#xFF0C;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x5C31;&#x5F88;&#x9002;&#x5408;&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x3002;UNPOOLED &#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x6E90;&#x4EC5;&#x4EC5;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x4EE5;&#x4E0B; 5 &#x79CD;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li><code>driver</code> &#x2013; &#x8FD9;&#x662F; JDBC &#x9A71;&#x52A8;&#x7684; Java &#x7C7B;&#x7684;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x540D;&#xFF08;&#x5E76;&#x4E0D;&#x662F; JDBC &#x9A71;&#x52A8;&#x4E2D;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7684;&#x6570;&#x636E;&#x6E90;&#x7C7B;&#xFF09;&#x3002;</li>
+<li><code>url</code> &#x2013; &#x8FD9;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7684; JDBC URL &#x5730;&#x5740;&#x3002;</li>
+<li><code>username</code> &#x2013; &#x767B;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</li>
+<li><code>password</code> &#x2013; &#x767B;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002;  </li>
+<li><p><code>defaultTransactionIsolationLevel</code> &#x2013; &#x9ED8;&#x8BA4;&#x7684;&#x8FDE;&#x63A5;&#x4E8B;&#x52A1;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x3002;
+&#x4F5C;&#x4E3A;&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x5C5E;&#x6027;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#x3002;&#x8981;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x524D;&#x7F00;&#x4E3A;&#x201C;driver.&#x201D;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+</li>
+<li><p>driver.encoding=UTF8
+&#x8FD9;&#x5C06;&#x901A;&#x8FC7; DriverManager.getConnection(url,driverProperties) &#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x503C;&#x4E3A; UTF8 &#x7684; encoding &#x5C5E;&#x6027;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#x3002;</p>
+</li>
+</ul>
+<p><strong>POOLED</strong>&#x2013; &#x8FD9;&#x79CD;&#x6570;&#x636E;&#x6E90;&#x7684;&#x5B9E;&#x73B0;&#x5229;&#x7528;&#x201C;&#x6C60;&#x201D;&#x7684;&#x6982;&#x5FF5;&#x5C06; JDBC &#x8FDE;&#x63A5;&#x5BF9;&#x8C61;&#x7EC4;&#x7EC7;&#x8D77;&#x6765;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8FDE;&#x63A5;&#x5B9E;&#x4F8B;&#x65F6;&#x6240;&#x5FC5;&#x9700;&#x7684;&#x521D;&#x59CB;&#x5316;&#x548C;&#x8BA4;&#x8BC1;&#x65F6;&#x95F4;&#x3002; &#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x4F7F;&#x5F97;&#x5E76;&#x53D1; Web &#x5E94;&#x7528;&#x5FEB;&#x901F;&#x54CD;&#x5E94;&#x8BF7;&#x6C42;&#x7684;&#x6D41;&#x884C;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x3002;</p>
+<p> &#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x63D0;&#x5230; UNPOOLED &#x4E0B;&#x7684;&#x5C5E;&#x6027;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x66F4;&#x591A;&#x5C5E;&#x6027;&#x7528;&#x6765;&#x914D;&#x7F6E; POOLED &#x7684;&#x6570;&#x636E;&#x6E90;&#xFF1A;</p>
+<ul>
+<li><code>poolMaximumActiveConnections</code> &#x2013; &#x5728;&#x4EFB;&#x610F;&#x65F6;&#x95F4;&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x7684;&#x6D3B;&#x52A8;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#xFF09;&#x8FDE;&#x63A5;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;10</li>
+<li><code>poolMaximumIdleConnections</code> &#x2013; &#x4EFB;&#x610F;&#x65F6;&#x95F4;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x7A7A;&#x95F2;&#x8FDE;&#x63A5;&#x6570;&#x3002;</li>
+<li>poolMaximumCheckoutTime &#x2013; &#x5728;&#x88AB;&#x5F3A;&#x5236;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#xFF0C;&#x6C60;&#x4E2D;&#x8FDE;&#x63A5;&#x88AB;&#x68C0;&#x51FA;&#xFF08;checked out&#xFF09;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;20000 &#x6BEB;&#x79D2;&#xFF08;&#x5373; 20 &#x79D2;&#xFF09;</li>
+<li><code>poolTimeToWait</code> &#x2013; &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5E95;&#x5C42;&#x8BBE;&#x7F6E;&#xFF0C;&#x5982;&#x679C;&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x82B1;&#x8D39;&#x4E86;&#x76F8;&#x5F53;&#x957F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8FDE;&#x63A5;&#x6C60;&#x4F1A;&#x6253;&#x5370;&#x72B6;&#x6001;&#x65E5;&#x5FD7;&#x5E76;&#x91CD;&#x65B0;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#xFF08;&#x907F;&#x514D;&#x5728;&#x8BEF;&#x914D;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E00;&#x76F4;&#x5B89;&#x9759;&#x7684;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;20000 &#x6BEB;&#x79D2;&#xFF08;&#x5373; 20 &#x79D2;&#xFF09;&#x3002;</li>
+<li><code>poolMaximumLocalBadConnectionTolerance</code> &#x2013; &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x4E8E;&#x574F;&#x8FDE;&#x63A5;&#x5BB9;&#x5FCD;&#x5EA6;&#x7684;&#x5E95;&#x5C42;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F5C;&#x7528;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x5C1D;&#x8BD5;&#x4ECE;&#x7F13;&#x5B58;&#x6C60;&#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x7684;&#x7EBF;&#x7A0B;. &#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x574F;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x6E90;&#x5141;&#x8BB8;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x91CD;&#x65B0;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x91CD;&#x65B0;&#x5C1D;&#x8BD5;&#x7684;&#x6B21;&#x6570;&#x4E0D;&#x5E94;&#x8BE5;&#x8D85;&#x8FC7; poolMaximumIdleConnections &#x4E0E; poolMaximumLocalBadConnectionTolerance &#x4E4B;&#x548C;&#x3002; &#x9ED8;&#x8BA4;&#x503C;&#xFF1A;3 (&#x65B0;&#x589E;&#x4E8E; 3.4.5)</li>
+<li><code>`poolPingQuery</code>- &#x53D1;&#x9001;&#x5230;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4FA6;&#x6D4B;&#x67E5;&#x8BE2;&#xFF0C;&#x7528;&#x6765;&#x68C0;&#x9A8C;&#x8FDE;&#x63A5;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x5E76;&#x51C6;&#x5907;&#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x201C;NO PING QUERY SET&#x201D;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x591A;&#x6570;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#x5931;&#x8D25;&#x65F6;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x6070;&#x5F53;&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#x3002;</li>
+<li><code>poolPingEnabled</code> &#x2013; &#x662F;&#x5426;&#x542F;&#x7528;&#x4FA6;&#x6D4B;&#x67E5;&#x8BE2;&#x3002;&#x82E5;&#x5F00;&#x542F;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E; poolPingQuery &#x5C5E;&#x6027;&#x4E3A;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x7684; SQL &#x8BED;&#x53E5;&#xFF08;&#x6700;&#x597D;&#x662F;&#x4E00;&#x4E2A;&#x901F;&#x5EA6;&#x975E;&#x5E38;&#x5FEB;&#x7684; SQL &#x8BED;&#x53E5;&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;false&#x3002;</li>
+<li><code>poolPingConnectionsNotUsedFor</code> &#x2013; &#x914D;&#x7F6E; poolPingQuery &#x7684;&#x9891;&#x7387;&#x3002;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x548C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x4E00;&#x6837;&#xFF0C;&#x6765;&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x4FA6;&#x6D4B;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;0&#xFF08;&#x5373;&#x6240;&#x6709;&#x8FDE;&#x63A5;&#x6BCF;&#x4E00;&#x65F6;&#x523B;&#x90FD;&#x88AB;&#x4FA6;&#x6D4B; &#x2014; &#x5F53;&#x7136;&#x4EC5;&#x5F53; poolPingEnabled &#x4E3A; true &#x65F6;&#x9002;&#x7528;&#xFF09;&#x3002;</li>
+</ul>
+<p><strong>JNDI</strong> &#x2013; &#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x6E90;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x4E3A;&#x4E86;&#x80FD;&#x5728;&#x5982; EJB &#x6216;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x8FD9;&#x7C7B;&#x5BB9;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x96C6;&#x4E2D;&#x6216;&#x5728;&#x5916;&#x90E8;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x7136;&#x540E;&#x653E;&#x7F6E;&#x4E00;&#x4E2A; JNDI &#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x5F15;&#x7528;&#x3002;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x6E90;&#x914D;&#x7F6E;&#x53EA;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li>initial_context &#x2013; &#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7528;&#x6765;&#x5728; InitialContext &#x4E2D;&#x5BFB;&#x627E;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;&#x5373;&#xFF0C;initialContext.lookup(initial_context)&#xFF09;&#x3002;&#x8FD9;&#x662F;&#x4E2A;&#x53EF;&#x9009;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x5FFD;&#x7565;&#xFF0C;&#x90A3;&#x4E48; data_source &#x5C5E;&#x6027;&#x5C06;&#x4F1A;&#x76F4;&#x63A5;&#x4ECE; InitialContext &#x4E2D;&#x5BFB;&#x627E;&#x3002;</li>
+<li>data_source &#x2013; &#x8FD9;&#x662F;&#x5F15;&#x7528;&#x6570;&#x636E;&#x6E90;&#x5B9E;&#x4F8B;&#x4F4D;&#x7F6E;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x63D0;&#x4F9B;&#x4E86; initial_context &#x914D;&#x7F6E;&#x65F6;&#x4F1A;&#x5728;&#x5176;&#x8FD4;&#x56DE;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x65F6;&#x5219;&#x76F4;&#x63A5;&#x5728; InitialContext &#x4E2D;&#x67E5;&#x627E;&#x3002;
+&#x548C;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x6E90;&#x914D;&#x7F6E;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x524D;&#x7F00;&#x201C;env.&#x201D;&#x76F4;&#x63A5;&#x628A;&#x5C5E;&#x6027;&#x4F20;&#x9012;&#x7ED9;&#x521D;&#x59CB;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</li>
+<li>env.encoding=UTF8</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mybatis_plugins.html" class="navigation navigation-prev " aria-label="Previous page: 插件 plugins">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mybatis_sqlMapper.html" class="navigation navigation-next " aria-label="Next page: SQL映射文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配置环境 environments","level":"1.2.1.6","depth":3,"next":{"title":"SQL映射文件","level":"1.2.2","depth":2,"path":"docs/mybatis/mybatis_sqlMapper.md","ref":"docs/mybatis/mybatis_sqlMapper.md","articles":[{"title":"SELECT","level":"1.2.2.1","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_select.md","ref":"docs/mybatis/mybatis_sqlMapper_select.md","articles":[]},{"title":"INSERT,UPDATE和DELETE","level":"1.2.2.2","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_other.md","ref":"docs/mybatis/mybatis_sqlMapper_other.md","articles":[]},{"title":"静态SQL","level":"1.2.2.3","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_staticSQL.md","ref":"docs/mybatis/mybatis_sqlMapper_staticSQL.md","articles":[]},{"title":"动态SQL","level":"1.2.2.4","depth":3,"path":"docs/mybatis/mybatis_sqlMapper_sql.md","ref":"docs/mybatis/mybatis_sqlMapper_sql.md","articles":[]}]},"previous":{"title":"插件 plugins","level":"1.2.1.5","depth":3,"path":"docs/mybatis/mybatis_plugins.md","ref":"docs/mybatis/mybatis_plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","-sharing","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © crazybuglzy.com 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"shortName":"gitbookuse"},"github":{"url":"https://github.com/crazyBugLzy"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"},"3-ba":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"base":"https://github.com/zhangjikai/gitbook-use/edit/master","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"crazybuglzy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mybaits 简单教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.baidu.com"}},"gitbook":"3.2.3","description":"快速学习Mybatis"},"file":{"path":"docs/mybatis/mybatis_environments.md","mtime":"2018-04-12T09:53:17.322Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-13T08:50:11.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
